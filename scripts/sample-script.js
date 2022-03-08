@@ -14,12 +14,44 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  // const Greeter = await hre.ethers.getContractFactory("Greeter");
+  // const greeter = await Greeter.deploy("Hello, Hardhat!");
 
-  await greeter.deployed();
+  // await greeter.deployed();
 
-  console.log("Greeter deployed to:", greeter.address);
+  // console.log("Greeter deployed to:", greeter.address);
+
+  const proposalNames = [
+    "Yes.",
+    "No.",
+    "Restricted Access",
+    "No Opinion"
+  ].map(p => ethers.utils.formatBytes32String(p));
+  // console.log(proposalNames);
+  // const BallotV2 = await hre.ethers.getContractFactory("BallotV2");
+  // const ballotV2 = await BallotV2.deploy(proposalNames)
+
+  // await ballotV2.deployed();
+
+  // console.log("Ballot deployed to:", ballotV2.address);
+
+  // const GameItem = await hre.ethers.getContractFactory("GameItem");
+  // const gameItem = await GameItem.deploy();
+  // await gameItem.deployed();
+
+  // console.log("GameItem deployed to:", gameItem.address);
+
+  const GameItems = await hre.ethers.getContractFactory("GameItems");
+  const gameItems = await GameItems.deploy();
+  await gameItems.deployed();
+
+  console.log("GameItems deployed to:", gameItems.address);
+
+  // const initialSupply = 10 ** 6
+  // const Rupay = await hre.ethers.getContractFactory("Rupay");
+  // const rupay = await Rupay.deploy(initialSupply);
+  // await rupay.deployed();
+  // console.log("Rupay deployed to:", rupay.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
