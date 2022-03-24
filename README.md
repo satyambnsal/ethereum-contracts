@@ -46,6 +46,35 @@ https://matic-mainnet-full-rpc.bwarelabs.com
 Block Explorer: https://www.polygonscan.com/
 
 
+# Block Explorers
 
+https://rinkeby.etherscan.io
+
+https://www.polygonscan.com/
+
+# Faucet links
+Rinkeby: https://faucet.rinkeby.io/
+
+
+
+# Deployed contracts
+
+## Rinkeby
+WeWereHere v1: 0x9A7Ac992Cf507Cae20FB47490f3aFc01602c687F
+WWH v2: 0x5D5C9993E02499e133d9fE58068D9e8DD1dbd15e
+
+## Polygon
+
+
+
+
+# Other Notes
+
+Force update metadata opensea
+
+https://testnets-api.opensea.io/api/v1/asset/<your_contract_address>/<token_id>/?force_update=true
+
+Validate endpoint: 
+https://testnets-api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/ 
 
 

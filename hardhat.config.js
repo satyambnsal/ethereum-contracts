@@ -1,9 +1,11 @@
 require("@nomiclabs/hardhat-waffle");
-
+require("dotenv").config()
 
 const POLYGON_ALCHEMY_KEY = process.env.POLYGON_ALCHEMY_KEY;
 const RINKEBY_ALCHEMY_KEY = process.env.RINKEBY_ALCHEMY_KEY;
-const PRIVATE_KEY = process.env.PRIVATE_KEY
+const PRIVATE_KEY = process.env.PRIVATE_KEY || ""
+
+console.log("key:: ", PRIVATE_KEY, POLYGON_ALCHEMY_KEY)
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
